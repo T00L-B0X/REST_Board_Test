@@ -1,0 +1,20 @@
+* HTTP 메서드 동작
+	# GET	: 조회(SELECT)
+	# POST	: 추가(INSERT / CREATE)
+	# PUT	: 전체수정(UPDATE) 
+	# PATCH	: 부분수정(UPDATE)
+	# DELETE: 삭제(DELETE)
+
+* REST 방식으로 URI 설계
+	/작업명/기본키+메서드+데이터
+	
+	# 작업명: 요청하려는 작업의 종류(이름)
+	# 기본키: 요청 작업에 따른 대상의 기본키 값
+	# 메서드: HTTP 메서드 종류
+	# 데이터: 작업을 수행할 때 필요한 JSON 데이터
+
+* 게시판(REST) 생성
+	# 글쓰기: /boards + 데이터
+	# 글조회: /boards/1000 (GET 방식)
+	# 글수정: /boards/1000 + 데이터 (PUT 방식)
+	# 글삭제: /boards/1000 (DELETE 방식)
